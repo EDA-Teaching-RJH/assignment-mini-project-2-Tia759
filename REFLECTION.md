@@ -1,0 +1,1 @@
+ # 01.08.2026- I will be making a colour guessing game that records wether the end result was a win or a loss aka correct or incorrect. So far i have added an introduction with the print command in assignment 2 file. I have made it record the end results in file_handeler. And in testing import i made a defention that i can import into assignment 2.
