@@ -1,7 +1,18 @@
 from Testingimport import random_colour 
-print ("Hello User. Let's play a guessing game!!!")
-print ("There will be three levels in this game. Each one will get harder.\n Level 1\n I will guess what colour you are thinking of")
-print ("Let's Begin!")
+
+name = input ("What is your name?")
+
+choice = input ("MENU\n 1.New Game\n 2.User Information\n 3.Previous Games Information\n")
+
+if choice := 1: 
+ print ("Hello" , name) 
+ print ("You will now receive a random colour. I am then going to ask you some questions.\nYour colour is...")
+ random_colour()
+ Guess_one = input ("Is your colour a primary colour?")
+ 
+
+else :
+ print ("AAAAA")
 
 
 
