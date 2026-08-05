@@ -5,10 +5,10 @@ def random_colour():
  print (Colour)
 
 def result(): 
- Result = input ("Is your colour red? Yes = 1 No = 2")
- if Result  := 1:
-      print ("Computer Win!")
- else: 
-      print (name ,"Win!")
+     Result = input ("Is your colour red? Yes = 1 No = 2") 
+     if Result  == 1:
+         print ("Computer Win!")
+     else: 
+         print ("Human Win!")
 
 result()
