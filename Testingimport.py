@@ -11,4 +11,18 @@ def result():
      else: 
          print ("Human Win!")
 
-result()
+def result_2(): 
+        Result = input ("Is your colour brown? Yes = 1 No = 2")
+        if Result == 1:
+            print ("Computer Win!")
+
+        else:
+            print ("Human Win!")
+
+def result_3():
+    Result = input ("Is your colour pink? 1 = Yes 2 = No")
+    if Result == 1:
+        print ("Computer Win!")
+
+    else: 
+        print ("Human Win!")
