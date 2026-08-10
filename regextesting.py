@@ -21,4 +21,7 @@ def verify_user():
         print ("Invalid username")
         verify_user()
 
-def update_user
+def update_user(username):
+    stored_user.append(username)
+
+verify_user()
