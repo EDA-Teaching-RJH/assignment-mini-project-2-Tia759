@@ -7,7 +7,7 @@ import re
 colour = ["green","red","Brown","purple","pink"]
 
 def Validate_Username(name):
-    pattern = re.compile("^[a-z0-9A-z_]{3,10}$")
+    pattern = re.compile(r"^[a-zA-z_]{2-11}+$")
     return bool (pattern.match(name)) 
 
 name = input ("What is your name?")
@@ -40,7 +40,7 @@ if choice := 1:
     
         
 
-else :
+else:
  print ("placeholder")
 
 
