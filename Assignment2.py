@@ -14,9 +14,11 @@ def verify_user():
     username = input ("Enter Username: ")
     if re.fullmatch(r"[a-zA-Z0-9_]{3,12}", username):
         print ("Username accepted")
+        time.sleep(1)
         update_user (username)
     else: 
         print ("Invalid username")
+        time.sleep(1)
         verify_user()
 
 def update_user(username):
@@ -24,10 +26,11 @@ def update_user(username):
 
 verify_user()
 
-choice = input ("MENU\n 1.New Game\n 2.User Information\n 3.Previous Games Information\n")
+choice = input ("MENU\n 1.New Game\n 2.User Information\n 3.Previous Games Information\n") 
+time.sleep(1)
 
 if choice := 1: 
-    print ("Hello" , username) 
+    print ("Hello" stored_user) 
     print ("You will now receive a random colour. I am then going to ask you some questions.Please type 1 for yes and 2 for no.\nYour colour is...")
     random_colour()
     Guess_one = input ("Is your colour a primary colour? 1=yes 2=no")
