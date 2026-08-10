@@ -2,18 +2,28 @@ from Testingimport import random_colour
 from Testingimport import result 
 from Testingimport import result_2
 from Testingimport import result_3
-from regextesting import verify_user
-from regextesting import update_user
 import re
 
 colour = ["green","red","Brown","purple","pink"]
 
+def verify_user():
+    username = input ("Enter Username: ")
+    if re.fullmatch(r"[a-zA-Z0-9_]{3,12}", username):
+        print ("Username accepted")
+        update_user (username)
+    else: 
+        print ("Invalid username")
+        verify_user()
 
+def update_user(username):
+    stored_user.append(username)
+
+verify_user()
 
 choice = input ("MENU\n 1.New Game\n 2.User Information\n 3.Previous Games Information\n")
 
 if choice := 1: 
-    print ("Hello" , name) 
+    print ("Hello" , username) 
     print ("You will now receive a random colour. I am then going to ask you some questions.Please type 1 for yes and 2 for no.\nYour colour is...")
     random_colour()
     Guess_one = input ("Is your colour a primary colour? 1=yes 2=no")
