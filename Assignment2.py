@@ -2,16 +2,13 @@ from Testingimport import random_colour
 from Testingimport import result 
 from Testingimport import result_2
 from Testingimport import result_3
+from regextesting import verify_user
+from regextesting import update_user
 import re
 
 colour = ["green","red","Brown","purple","pink"]
 
-def Validate_Username(name):
-    pattern = re.compile(r"^[a-zA-z_]{2-11}+$")
-    return bool (pattern.match(name)) 
 
-name = input ("What is your name?")
-print (Validate_Username('name'))
 
 choice = input ("MENU\n 1.New Game\n 2.User Information\n 3.Previous Games Information\n")
 

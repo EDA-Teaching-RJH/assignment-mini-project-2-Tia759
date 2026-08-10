@@ -2,7 +2,7 @@ import re
 import time 
 import os
 
-stored_user = []
+stored_user = [] 
 
 def verify_user():
     username = input ("Enter Username: ")
@@ -17,4 +17,3 @@ def update_user(username):
     stored_user.append(username)
     
 
-verify_user()
