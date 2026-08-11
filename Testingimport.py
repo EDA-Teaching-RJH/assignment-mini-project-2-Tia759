@@ -29,4 +29,3 @@ def result_3():
     else: 
         print ("Human Win!")
 
-random_colour()

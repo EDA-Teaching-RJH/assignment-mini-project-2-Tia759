@@ -22,4 +22,19 @@ def update_user(username):
 
 verify_user()
 
+choice = int(input("MENU\n 1.New Game\n 2.User Information\n 3.Previous Games Information\n"))
+time.sleep(1)
+
+while True: 
+    if choice == 1:
+         print ("Hello", stored_user) 
+         time.sleep(1)
+         print ("You will now recieve a random colour.\n I am then going to ask you some questions\n Please type 1 for Yes and 2 for No.\n Your colour is...")
+         time.sleep(1)
+         break
+    else:
+        print ("no")
+        break
+    
+
 from Testingimport import random_colour

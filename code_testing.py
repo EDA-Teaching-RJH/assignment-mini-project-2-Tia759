@@ -31,21 +31,21 @@ if choice := 1:
     print ("You will now receive a random colour. I am then going to ask you some questions.Please type 1 for yes and 2 for no.\nYour colour is...")
     random_colour()
     Guess_one = input ("Is your colour a primary colour? 1=yes 2=no")
-    if Guess_one == 2: 
+    if Guess_one := 2: 
         colour.pop(1)
         Guess_two = input ("Is your colour associated to nature? 1=yes 2=no")
-        if Guess_two == 1:
+        if Guess_two := 1:
             colour.pop (2,3)
             result_2()
             
 
-        if Guess_two == 2:
+        if Guess_two := 2:
             colour.pop (0,1)
             result_3()
 
 
     else:
-        print (colour)
+        result()
     
     
         
