@@ -5,19 +5,21 @@ def random_colour():
  print (Colour)
 
 def result(): 
-     Result = input ("Is your colour red? Yes = 1 No = 2") 
-     if Result  == 1:
+     result = input ("Is your colour red? Yes = 1 No = 2") 
+     if result == 1:
          print ("Computer Win!")
      else: 
          print ("Human Win!")
 
 def result_2(): 
-        Result = input ("Is your colour brown? Yes = 1 No = 2")
-        if Result == 1:
-            print ("Computer Win!")
+        Result_2 = input ("Is your colour brown? Yes = 1 No = 2")
+        if Result_2 := 1:
+         print ("Computer Win!")
 
+        elif result_2:= 2:
+         print ("Human Win!")
         else:
-            print ("Human Win!")
+            print ("invalid response")
 
 def result_3():
     Result = input ("Is your colour pink? 1 = Yes 2 = No")
@@ -26,3 +28,5 @@ def result_3():
 
     else: 
         print ("Human Win!")
+
+random_colour()
