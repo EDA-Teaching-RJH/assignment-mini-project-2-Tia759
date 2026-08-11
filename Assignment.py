@@ -1,6 +1,8 @@
 import re
 import time 
 import os 
+import random
+
 
 colour = ["green","red","Brown","purple","pink"]
 
@@ -31,10 +33,18 @@ while True:
          time.sleep(1)
          print ("You will now recieve a random colour.\n I am then going to ask you some questions\n Please type 1 for Yes and 2 for No.\n Your colour is...")
          time.sleep(1)
+         Colour = random.choice (["green","red","Brown","purple","pink"])
+         print (Colour)
+         Guess_one = int(input("Is your colour a primary colour?\n Yes = 1\n No = 2"))
+         if Guess_one == 1:
+             from results import result
+             result()
+             break
+         else: 
+             print ("")
          break
     else:
         print ("no")
         break
     
 
-from Testingimport import random_colour

@@ -3,13 +3,9 @@ import random
 def random_colour():
  Colour = random.choice (["green","red","Brown","purple","pink"])
  print (Colour)
+ 
 
-def result(): 
-     result = input ("Is your colour red? Yes = 1 No = 2") 
-     if result == 1:
-         print ("Computer Win!")
-     else: 
-         print ("Human Win!")
+
 
 def result_2(): 
         Result_2 = input ("Is your colour brown? Yes = 1 No = 2")
@@ -29,3 +25,4 @@ def result_3():
     else: 
         print ("Human Win!")
 
+result() 
