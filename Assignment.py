@@ -41,10 +41,13 @@ while True:
              result()
              break
          else: 
-             print ("")
+             colour.pop (1)
+             Guess_two = int(input("Is your colour associated with nature?\n Yes = 1\n No = 2"))
+             if Guess_two == 1:
+                 print ("placeholder")
          break
     else:
-        print ("no")
+        print ("placeholder")
         break
     
 
