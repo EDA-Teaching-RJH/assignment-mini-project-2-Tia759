@@ -4,3 +4,10 @@ def result():
          print ("Computer Win!")
      else: 
          print ("Human Win!")
+
+def result_2():
+    Result_2 = int(input("Is your colour Brown? Yes = 1 No = 2"))
+    if Result_2 == 1:
+        print ("Computer Win!")
+    else:
+        print ("Human Win!")
