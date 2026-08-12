@@ -11,3 +11,10 @@ def result_2():
         print ("Computer Win!")
     else:
         print ("Human Win!")
+
+def results_3():
+    Result_3 = int(input("Is your colour Pink? Yes = 1 No = 2"))
+    if Result_3 == 1: 
+        print ("Computer Win!")
+    else: 
+        print ("Human Win!")

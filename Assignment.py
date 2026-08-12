@@ -46,9 +46,14 @@ while True:
              if Guess_two == 1:
                  from results import result_2
                  result_2()
+             else:
+                 from results import results_3
+                 results_3()
          break
-    else:
-        print ("placeholder")
+    elif choice == 2:
+        print ("Your username is", stored_user)
         break
+    else: 
+        print ("placeholder")
     
 
