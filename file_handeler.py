@@ -1,4 +1,11 @@
 import csv 
-def save_result(): 
-    file = open("results.csv","a","newline=")
-    writer = csv.writer(file)
+
+  
+
+def reading_results():
+    with open ("results.csv","r") as file:
+        csvreader = csv.reader (file)
+
+        for row in csvreader: 
+            print (row)
+

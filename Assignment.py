@@ -4,6 +4,7 @@ import os
 import random
 
 
+
 colour = ["green","red","Brown","purple","pink"]
 
 stored_user = []
@@ -54,6 +55,11 @@ while True:
         print ("Your username is", stored_user)
         break
     else: 
-        print ("placeholder")
+        print ("Showing Previous players Scores:")
+        time.sleep(1)
+        from file_handeler import reading_results
+        reading_results()
+        print ("Would you like to add your own Score?")
+        break
     
 
