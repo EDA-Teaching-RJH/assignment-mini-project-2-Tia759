@@ -59,7 +59,15 @@ while True:
         time.sleep(1)
         from file_handeler import reading_results
         reading_results()
-        print ("Would you like to add your own Score?")
+        print ("Add your own score now.")
+        from file_handeler import appending_results
+        appending_results(data_row, csv_filename = "results.csv")
+        if __name__ == "__main__":
+            Username = stored_user
+            Wins = input
+            data_entry = [Username,Wins]
+            print (data_entry)
+            append_to_csv(data_entry, "results.csv")
         break
     
 

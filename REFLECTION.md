@@ -3,3 +3,5 @@
  #04.08.2026- I am struggling with figuring out how to remove a 'colour' from a list. However i am reading about using the .pop() feature in order to solve the issue. I discovered the i needed to create a function that defines what is in my list in order to use the .pop feature. Then i can pick which colour i want to remove from the list.
  
  #05.08.2026- Yesterday i struggled to us the if and else functions. Everytime i attempted to run the code and use the input that would result in the else function running it would instead run the 'if' function no matter what. I attempted to redo the indents using the tab feature; use the 'elif' feature instead. Nothing worked. Today it dawned on me that writing the 'if' function as 'if := 1' prevents it from checking the 'else' function. So i changed it to 'if == 1' and it now works. I have also been working on implementing regex. I have created a function that checks for and validates a username with lowercases/uppercases/underscores/numbers as long as it is between 3-10 characters. 
+
+ #15- Finsih csv file
