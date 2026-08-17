@@ -4,13 +4,14 @@ import os
 import random
 
 
-
+# colour.pop removes colours from this list 
 colour = ["green","red","Brown","purple","pink"]
 
 stored_user = []
 
 def verify_user():
     username = input ("Enter Username: ")
+    #code is 3-12 digits long so that people can choose between putting their real name or a fake username
     if re.fullmatch(r"[a-zA-Z0-9_]{3,12}", username):
         print ("Username accepted")
         time.sleep(1)
@@ -59,15 +60,6 @@ while True:
         time.sleep(1)
         from file_handeler import reading_results
         reading_results()
-        print ("Add your own score now.")
-        from file_handeler import appending_results
-        appending_results(data_row, csv_filename = "results.csv")
-        if __name__ == "__main__":
-            Username = stored_user
-            Wins = input
-            data_entry = [Username,Wins]
-            print (data_entry)
-            append_to_csv(data_entry, "results.csv")
         break
     
 
