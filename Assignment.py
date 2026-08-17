@@ -15,14 +15,18 @@ def verify_user():
     if re.fullmatch(r"[a-zA-Z0-9_]{3,12}", username):
         print ("Username accepted")
         time.sleep(1)
+        #time.sleep function used to immitate a computer processing something 
         update_user (username)
     else: 
         print ("Invalid username")
         time.sleep(1)
         verify_user()
+        #if the username is invalid it restarts the function so that the user doesn't have to run the code again
 
 def update_user(username):
     stored_user.append(username)
+#stores the username as it will be printed out again
+#this function runs within the verify_user() function 
 
 verify_user()
 
