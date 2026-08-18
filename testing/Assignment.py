@@ -30,7 +30,7 @@ def update_user(username):
 
 verify_user()
 
-choice = int(input("MENU\n 1.New Game\n 2.User Information\n 3.Previous Games Information\n"))
+choice = int(input("MENU\n 1.New Game\n 2.User Information\n 3.Previous Games Information\n 4.Information on colours"))
 time.sleep(1)
 #short lines and delayed paragrah used to improve readablity for users
 
@@ -63,8 +63,8 @@ while True:
     elif choice == 2:
         print ("Your username is", stored_user)
         break
-    else: 
-        #need to make this into an 'elif' function so that it will only run when '3' is inputed
+    elif choice == 3: 
+        #need to make this into an 'elif' function so that it will only run when '3' is inputed (COMPLETED)
         print ("Showing Previous players Scores:")
         time.sleep(1)
         from file_handeler import reading_results
@@ -72,5 +72,12 @@ while True:
         #reads a csv file. Using https://www.youtube.com/watch?v=raRt1SeqpK4 i learnt that 'r' stands for read. 'a' stands for append and 'w' stands for write when writing csv code.
         break
     #attempted to give the user the ability to add themselves to the csv list however data_row kept coming up as undefined 
-    
+    elif choice == 4:
+        print ("Here you will find information on all the colours and what questions they answer yes/no too.")
+        #objects: secondary/primary colours/nature/wins 
+        break
+
+    else: 
+        print ("incorrect please try again")
+        break
 

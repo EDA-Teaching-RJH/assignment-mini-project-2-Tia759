@@ -1,7 +1,11 @@
- # 01.08.2026- I will be making a colour guessing game that records wether the end result was a win or a loss aka correct or incorrect. So far i have added an introduction with the print command in assignment 2 file. I have made it record the end results in file_handeler. And in testing import i made a defention that i can import into assignment 2.
  
  #04.08.2026- I am struggling with figuring out how to remove a 'colour' from a list. However i am reading about using the .pop() feature in order to solve the issue. I discovered the i needed to create a function that defines what is in my list in order to use the .pop feature. Then i can pick which colour i want to remove from the list.
  
  #05.08.2026- Yesterday i struggled to us the if and else functions. Everytime i attempted to run the code and use the input that would result in the else function running it would instead run the 'if' function no matter what. I attempted to redo the indents using the tab feature; use the 'elif' feature instead. Nothing worked. Today it dawned on me that writing the 'if' function as 'if := 1' prevents it from checking the 'else' function. So i changed it to 'if == 1' and it now works. I have also been working on implementing regex. I have created a function that checks for and validates a username with lowercases/uppercases/underscores/numbers as long as it is between 3-10 characters. 
 
  #15- Finsih csv file
+ #18- implementing oop 
+
+ I started this project on the 1st of August however i spent the day before brainstorming what i could do and eventually settled on doing a colour guessing game. I wanted to be able to record wether the player won or lost and have that information be put into a csv file to later be printed out. However, when working on it I was unable to figure out how to do that and instead opted for an arcade style print out listing the scores and names of previous players. So far i had used the print command learned in the first session of my programming classes to print an introduction for the user. As well as this i started writing code to append to a csv file which i planned to develop later on. And I made a function that would pick a random colour for the user in my 'Testingimport.py' file that was intended to be imported into my 'Assignment.py' file.
+ 
+ From the 2nd-4th of August i removed the introduction and replaced it with a menu and the opportunity for the user to input their name. 

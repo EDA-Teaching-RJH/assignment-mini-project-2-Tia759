@@ -5,3 +5,6 @@ from results import results_3
 def test_result():
     assert result(1) == "Computer Win!"
     assert result (2) == "Human Win!"
+
+# need to figure out what directory this is in 
+# file was in a pycache folder however moving it out has not fixed the problem
