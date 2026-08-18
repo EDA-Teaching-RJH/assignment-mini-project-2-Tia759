@@ -46,17 +46,17 @@ while True:
          Guess_one = int(input("Is your colour a primary colour?\n Yes = 1\n No = 2"))
          #before i specified Guess_one to be an integer it would not run the if feature and would ignore it. And move straight onto Guess_two.
          if Guess_one == 1:
-             from testing.results import result
+             from results import result
              result() #imported from a libary i created. It asks if the users colour is red and then tells them who won
              break
          else: 
              colour.pop (1) #removes red from the list of colours
              Guess_two = int(input("Is your colour associated with nature?\n Yes = 1\n No = 2"))
              if Guess_two == 1:
-                 from testing.results import result_2
+                 from results import result_2
                  result_2() #it asks if the users colour is brown and specifys if they win or not
              else:
-                 from testing.results import results_3
+                 from results import results_3
                  results_3()# asks if the users colour is pink
                  #Guess_two only asks about brown or pink to include a chance for the user to lose if they got purple or green
          break
