@@ -73,8 +73,24 @@ while True:
         break
     #attempted to give the user the ability to add themselves to the csv list however data_row kept coming up as undefined 
     elif choice == 4:
-        print ("Here you will find information on all the colours and what questions they answer yes/no too.")
+        print ("Here you will find information on wether a colour is a primary/secondary colour or neither.")
+        time.sleep(1)
         #objects: secondary/primary colours/nature/wins 
+        from Colour_class import Colour
+        Red = Colour("No", "Red is a Primary colour")
+        Green = Colour("Yes", "Green is a Secondary colour")
+        Brown = Colour("Yes","Brown is Neither")
+        Purple = Colour("No","Purple is a Secondary colour")
+        Pink = Colour("No", "Pink is Neither")
+        print(Red.level)
+        time.sleep(1)
+        print(Green.level)
+        time.sleep(1)
+        print(Brown.level)
+        time.sleep(1)
+        print(Purple.level)
+        time.sleep(1)
+        print(Pink.level)
         break
 
     else: 
